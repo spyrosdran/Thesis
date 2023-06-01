@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sentiment Analysis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <img src="uomlogo.png" alt="">
+  <h1>Sentiment Analysis Tool</h1>
+  <form>
+    <input autofocus type="text" name="text" id="text" placeholder="Type something...">
+  </form>
+  <div id="results">
+    <section>
+      <h2>Evaluation with Mean Value</h2>
+      <h3 id="mean-sentiment"></h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Word</th>
+            <th>Negative %</th>
+            <th>Positive %</th>
+          </tr>
+        </thead>
+        <tbody id="mean-table">
+        </tbody>
+      </table>
+    </section>
+    <section style="margin-top: 100px;">
+      <h2>Evaluation with Counting Occurrences</h2>
+      <h3 id="count-sentiment"></h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Word</th>
+            <th>Negative</th>
+            <th>Positive</th>
+          </tr>
+        </thead>
+        <tbody id="count-table">
+        </tbody>
+      </table>
+    </section>
+  </div>
+  <div id="error-message" class="error-message"></div>
+  <p class="down">2023 - Developed by Spyros Drantzios for Academic Purposes<br>Thesis: Sentiment Analysis with Neural Networks and Efficient Training of Neural Networks</p>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">▲ Back to top</button> 
+</body>
+<script src="script.js"></script>
+</html>

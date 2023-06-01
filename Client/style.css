@@ -1,0 +1,147 @@
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+min-height: 60vh;
+width: 100%;
+padding-top: 30px;
+padding-bottom: 30px;
+scroll-behavior: smooth;
+}
+
+img {
+width: 200px;
+height: auto;
+opacity: 0;
+margin: 15px;
+animation: fade-in 0.7s forwards;
+}
+
+@keyframes fade-in {
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
+
+.fade-in {
+opacity: 0;
+transform: translateY(20px);
+animation: fade-in 0.4s ease forwards;
+}
+
+h1 {
+justify-content: center;
+opacity: 0;
+animation: fade-in 0.7s forwards;
+animation-delay: 0.3s;
+}
+
+form {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+opacity: 0;
+animation: fade-in 0.7s forwards;
+animation-delay: 0.6s;
+min-width: 100%;
+}
+
+form>input {
+min-width: 20%;
+border-radius: 50px;
+padding: 7px;
+margin: 5px;
+border: 1px solid grey;
+transition: 0.3s ease;
+}
+
+form>input:focus {
+min-width: 30%;
+padding: 9px;
+border: 1px solid rgb(0, 38, 255);
+}
+
+#results {
+display: none;
+margin-top: 20px;
+}
+
+#results section {
+margin-bottom: 20px;
+}
+
+table {
+border-collapse: collapse;
+width: 100%;
+}
+
+th,
+td {
+border: 1px solid #ddd;
+padding: 8px;
+text-align: left;
+}
+
+th {
+background-color: #f2f2f2;
+}
+
+.positive {
+color: green;
+}
+
+.negative {
+color: red;
+}
+
+.neutral {
+color: orange;
+}
+
+.black {
+color: black;
+}
+
+.error-message {
+color: red;
+margin-top: 10px;
+padding: 4px;
+}
+
+.down {
+    color: rgb(174, 174, 174);
+    font-size: 10px;
+    position:static;
+    bottom: 0;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(0, 38, 255); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 14px; /* Increase font size */
+    filter: drop-shadow(0px 2px 4px #000097);
+    transition: 0.2s ease;
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+    filter: drop-shadow(0px 2px 4px #464646);
+  }

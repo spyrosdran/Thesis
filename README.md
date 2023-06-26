@@ -1,4 +1,4 @@
-## Sentiment Analysis with Neural Networks and Efficient Training of Neural Networks
+## Sentiment Analysis with Neural Networks and Efficient and Distributed Training of Neural Networks
 Contents:
  1. Client **→** Client for interacting with the trained NN
  2. Server **→** API which makes the predictions, using the trained model

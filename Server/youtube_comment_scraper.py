@@ -6,7 +6,7 @@ from urllib.parse import urlparse, parse_qs
 class YouTubeCommentScraper:
 
     def __init__(self):
-        self.api_key = "AIzaSyAdMqx6UQ_xWpTz_r2T5oHS2vQ2o_i-8iM"
+        self.api_key = "API_KEY"
         self.youtube = build("youtube", "v3", developerKey=self.api_key)
 
     def get_video_id(self, value):

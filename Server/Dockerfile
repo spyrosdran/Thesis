@@ -2,8 +2,7 @@ FROM python:3.9
 
 COPY ./requirements.txt requirements.txt
 RUN pip install tensorflow
-# --no-cache-dir
-RUN pip install --upgrade -r ./requirements.txt
+RUN pip install --upgrade -r ./requirements.txt          # --no-cache-dir
 
 COPY app.py .
 COPY evaluator.py .

@@ -2,8 +2,8 @@ import re
 import nltk
 import numpy as np
 import pandas as pd
-import json
-from youtube_comment_scraper import YouTubeCommentScraper
+#import json
+#from youtube_comment_scraper import YouTubeCommentScraper
 
 nltk.download('stopwords')
 nltk.download('wordnet')
@@ -25,7 +25,7 @@ class Evaluator:
         self.tokenizer = Tokenizer(filters='!"#$%&()*+,-./:;<=>?@[\\]^_`{|}~\t\n', lower=True, num_words=self.max_words)
         #self.scraper = YouTubeCommentScraper()
 
-        df = pd.read_csv('IMDB Dataset.csv', sep=',')
+        df = pd.read_csv('IMDB_Dataset.csv', sep=',')
         self.tokenizer.fit_on_texts(df['review'])
 
     # Cleaning the text

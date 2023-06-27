@@ -12,7 +12,7 @@
 To build a Docker Container for the server:
 
  - Open the server folder in your terminal
- - docker build -t sentiment_analysis .
- - docker run -p 5000:5000 sentiment-analysis
- - Open client's index.html and you' re ready
+ - ```bash docker build -t sentiment_analysis .```
+ - ```bash docker run -p 5000:5000 sentiment-analysis```
+ - Open client's ```bash index.html``` and you' re ready
 
